@@ -1,0 +1,22 @@
+Package: SemanticSearchFRG
+Type: Package
+Title: Positive and negative words semantic search (Title Case)
+Version: 0.1.0
+Author: Fabricio RG
+Maintainer: Fabricio RG <fabricio.romero.garcia@ki.se>
+Description: The package is intended to be used for finding and summarizing negative
+    and positive words in a text document based in two lists of positive or negative words
+    stored in the data package. It takes an english language text file in .txt format. 
+    The user provides the path of the document to the preproc_text() function. It will
+    separate words in the document and store individually in a string vector. Then, the
+    user takes the output from the first function and uses it as first argument for the
+    match_pos_neg() function. It will compare the words in the input data with the positive
+    and negative lists and return a vector with the respective occurences per type.
+    Lastly, the user takes the output from the second function and uses it as unique
+    argument for the summarize_pos_neg() function, which will return the final summary
+    table with total counts per type and positive/negative ratio.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2

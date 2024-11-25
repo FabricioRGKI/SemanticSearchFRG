@@ -14,7 +14,7 @@
 #' positive/negative ratio
 #'
 #' @examples
-#' summarize_pos_neg(pos_neg_vector)
+#' summarize_pos_neg(match_pos_neg(preproc_text("./test_data/Example_negative.txt")))
 #'
 # Function to summarize positive and negative string vectors
 # Define the function

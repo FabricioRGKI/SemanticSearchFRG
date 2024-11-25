@@ -1,8 +1,10 @@
 #' Vector of negative words.
-#' @docType data
-#' The vector is intended to be used internally for SemanticSeachFRG package functions.
 #'
-#' Vector of negative words.
+#' The vector is intended to be used internally for SemanticSeachFRG package functions.
+#' @source First list was generated using ChatGPT (v4) prompt (OpenAI, 2023), and then curated
+#' manually and defining relevant prefixes using web dictionary thesaurus Merriam-Webster 2024.
+#' @examples
+#' print(negative_words)
 #'
 negative_words <- c(
   "aggravat*", "ang*", "anxi*", "ashamed*", "bitte*", "broken*", "careless*", "chao*", "cold*",

@@ -6,21 +6,21 @@
 #' in the output vector. words_vector could come from the preproc_text()
 #' function output or can be a vector with english words as
 #' single elements. positive_words and negative_words are internal
-#' package vector data that are called by their names.
+#' package vector data that are called by default.
 #'
 #' @param words_vector Output form preproc_text() function, a vector containing
 #' strings as elements.
-#' @param positive_words Internal package vector data that is called by its name.
-#' @param negative_words Internal package vector data that is called by its name.
+#' @param positive_words Internal package vector data that is called by default.
+#' @param negative_words Internal package vector data that is called by default.
 #'
 #' @return pos_neg_vector which is a string vector for each positive and negative word matches
 #'
 #' @examples
-#' match_pos_neg(words_vector, positive_words, negative_words)
+#' match_pos_neg(preproc_text("./test_data/Example_negative.txt"))
 #'
 # Function to match words vector with positive and negative word vectors
 # Define the function
-match_pos_neg <- function(words_vector, positive_words, negative_words) {
+match_pos_neg <- function(words_vector, x=positive_words, y=negative_words) {
 
   # Initialize a vector to store results
   results <- character(length(words_vector))

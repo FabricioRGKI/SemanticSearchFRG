@@ -1,8 +1,10 @@
 #' Vector of positive words.
-#' @docType data
-#' The vector is intended to be used internally for SemanticSeachFRG package functions.
 #'
-#' Vector of positive words.
+#' The vector is intended to be used internally for SemanticSeachFRG package functions.
+#' @source First list was generated using ChatGPT (v4) prompt (OpenAI, 2023), and then curated
+#' manually and defining relevant prefixes using web dictionary thesaurus Merriam-Webster 2024.
+#' @examples
+#' print(positive_words)
 #'
 positive_words <- c(
   "abundant*", "accomplish*", "amaz*", "ambitious*", "appreciative*",

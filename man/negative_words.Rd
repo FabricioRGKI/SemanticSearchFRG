@@ -7,10 +7,18 @@
 \format{
 An object of class \code{character} of length 101.
 }
+\source{
+First list was generated using ChatGPT (v4) prompt (OpenAI, 2023), and then curated
+manually and defining relevant prefixes using web dictionary thesaurus Merriam-Webster 2024.
+}
 \usage{
 negative_words
 }
 \description{
-Vector of negative words.
+The vector is intended to be used internally for SemanticSeachFRG package functions.
+}
+\examples{
+print(negative_words)
+
 }
 \keyword{datasets}

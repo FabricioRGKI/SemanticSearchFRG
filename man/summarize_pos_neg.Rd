@@ -22,6 +22,6 @@ It would also work fine with a vector with variable occurrences of the
 strings "positive" and "negative".
 }
 \examples{
-summarize_pos_neg(pos_neg_vector)
+summarize_pos_neg(match_pos_neg(preproc_text("./test_data/Example_negative.txt")))
 
 }

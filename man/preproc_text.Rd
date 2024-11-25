@@ -7,7 +7,7 @@
 preproc_text(file_path)
 }
 \arguments{
-\item{file_path}{path to the data, e.g. ".../yourDataFolder/Example_text.txt"}
+\item{file_path}{path to the data, e.g. "./test_data/Example_negative.txt"}
 }
 \value{
 Strings vector containing all the individual words found in the input text.
@@ -18,6 +18,6 @@ all the letters to lower case, removes punctuation, keeps contractions and
 returns a vector with all the individual words in the text as string elements.
 }
 \examples{
-preproc_text("~yourDataFolder/Example_text.txt")
+preproc_text("./test_data/Example_negative.txt")
 
 }

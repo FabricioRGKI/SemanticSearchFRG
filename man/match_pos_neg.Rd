@@ -4,15 +4,15 @@
 \alias{match_pos_neg}
 \title{Make semantic search against positive and negative word vectors}
 \usage{
-match_pos_neg(words_vector, positive_words, negative_words)
+match_pos_neg(words_vector, x = positive_words, y = negative_words)
 }
 \arguments{
 \item{words_vector}{Output form preproc_text() function, a vector containing
 strings as elements.}
 
-\item{positive_words}{Internal package vector data that is called by its name.}
+\item{positive_words}{Internal package vector data that is called by default.}
 
-\item{negative_words}{Internal package vector data that is called by its name.}
+\item{negative_words}{Internal package vector data that is called by default.}
 }
 \value{
 pos_neg_vector which is a string vector for each positive and negative word matches
@@ -24,9 +24,9 @@ producing/or not matches that are registered as "positive" or "negative" element
 in the output vector. words_vector could come from the preproc_text()
 function output or can be a vector with english words as
 single elements. positive_words and negative_words are internal
-package vector data that are called by their names.
+package vector data that are called by default.
 }
 \examples{
-match_pos_neg(words_vector, positive_words, negative_words)
+match_pos_neg(preproc_text("./test_data/Example_negative.txt"))
 
 }
